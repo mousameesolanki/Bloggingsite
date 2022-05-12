@@ -8,11 +8,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import (TemplateView,ListView,DetailView,CreateView,UpdateView,DeleteView)
 # Create your views here.
 
+#class LogoutView()
+
 class AboutView(TemplateView):
     template_name='about.html'
 
 class LinkedinView(TemplateView):
-    template_name='linkedin.html'
+   template_name='linkedin.html'
     
 class PostListView(ListView):
      model=Post
